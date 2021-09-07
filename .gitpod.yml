@@ -1,10 +1,10 @@
 # Learn more about this file at https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - name: react-app
-    init: cd frontend & yarn
-    command: cd frontend & yarn start
+    init: cd frontend && yarn
+    command: cd frontend && yarn start
   - name: flask-server
-    init: cd backend && pip install -r requirements.txt && python db_init.py
+    init: cd backend && pip install -r requirements.txt && sudo apt-get install python3 && python3 db_init.py
     openMode: split-right
 ports:
   - port: 3000
